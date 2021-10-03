@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UCSD welcome dinner</title>
+        <link rel="icon" href="icon.ico" type="image/gif">
+    </head>
+    <body>
+        <header>
+            <h1>UCSD welcome dinner</h1>
+            <h3>
+                Date: Oct. 8, 2021<br>
+                Location: Sixth College meeting room
+            </h3>
+            <h5>The purpose of this meeting is to plan a <em>welcome dinner party</em> for the incoming UCSD student.</h5>
+            <br>
+            <img class="picture" src="depositphotos_77323640-stock-illustration-people-at-dinner-party.jpg" alt="ready to eat" width="400" height="250" />>
+            <figure>
+                <figcaption>Waiting before the meeting start</figcaption>
+                <audio
+                    controls
+                    src="Faylinn.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                </audio>
+            </figure>
+        </header>
+        <hr>
+        <main>
+            <h2>Sections</h2>
+            <nav>
+                <ul>
+                    <li><a href="#0">Attendance list</a></li>
+                    <li><a href="#1">Agenda</a></li>
+                    <li><a href="#2">View the event Location</a></li>
+                    <li><a href="#3">What we left from last time</a></li>
+                    <li><a href="#4">What we need to discuss today</a></li>
+                    <li><a href="#5">Concerns</a></li>
+                    <li><a href="#6">Sign up for next meeting</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <section>
+                <h2 id="0">Attendance list</h2>
+                <details>
+                    <summary>
+                        click here to see who signed up for today's meeting
+                    </summary>
+                    <ol>
+                        <li>person A</li>
+                        <li>person B</li>
+                        <li>person C</li>
+                        <li>person D</li>
+                        <li>person E</li>
+                        <li>person F</li>
+                        <li>person G</li>
+                        <li>person H</li>
+                        <li>person I</li>
+                        <li>person J</li>
+                        <li>person K</li>
+                        <li>person L</li>
+                        <li>person M</li>
+                        <li>person N</li>
+                    </ol>
+                </details>
+                <br>
+                <p><i>Please select your name and then press the button below when you arrived to the meeting</i></p>
+                <label for="Attendance">Choose your name: </label>
+                <select id="Attendance">
+                    <option>person A</option>
+                    <option>person B</option>
+                    <option>person C</option>
+                    <option>person D</option>
+                    <option>person E</option>
+                    <option>person F</option>
+                    <option>person G</option>
+                    <option>person H</option>
+                    <option>person I</option>
+                    <option>person J</option>
+                    <option>person K</option>
+                    <option>person L</option>
+                    <option>person M</option>
+                    <option>person N</option>
+                </select>
+                <br>
+                <button name="Attendance">
+                    Check-in &#10004;
+                </button>
+            </section>
+            <hr>
+            <section>
+                <h2 id="1">Agenda</h2>
+                <div class="shadowbox">
+                    <p>
+                        
+                        <input type="checkbox" name="flyer-design" checked>
+                            <label>Flyer Design</label> 
+                            <progress max="100" value="100"> 100% </progress>
+                        <br>
+
+                        
+                        <input type="checkbox" name="location" checked>
+                            <label>Location Reservation for the Event</label> 
+                            <progress max="100" value="100"> 100% </progress>
+                        <br>
+                        
+                        
+                        <input type="checkbox" name="send-out">
+                            <label">Sending Out Invitations</label> 
+                            <progress max="100" value="70"> 50% </progress>
+                        <br>
+
+                        <input type="checkbox" name="food">
+                            <label>Food Decision Ordering</label> 
+                            <progress max="100" value="20"> 20% </progress>
+                        <br>
+                        
+                    </p>
+
+                </div>
+
+            </section>
+            <hr>
+            <section>
+                <h2 id="2">View the event Location</h2>
+                <video controls width="250">
+                
+                    <source src="video-park.mp4"
+                            type="video/mp4">
+                
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </section>
+            <hr>
+            <section>
+                <h2 id="3">What we left from last time</h2>
+                <label>Summary</label>
+                <p>At the last meeting, we finished our <b>flyer design</b> and also <b>reserved the locaton</b> for the event.
+                    Then, we discussed about how we were going to <b>send out Invitations</b>. 
+                    We concluded that we will be sending out <b>flyers</b> and <b>emails</b> with <b>invitations links</b> and <b>QR codes</b> for all incoming students.</p>
+            </section>
+            <hr>
+            <section>
+                <h2 id="4">What we need to discuss today</h2>
+                <p>This meeting is mainly for the food decision and food ordering. 
+                    Once we decided what to eat for our welcome dinner we should be <strong>GOOD TO GO!</strong></p>
+                <h3>Food Option</h3>
+                <p><strong>Main Dishes</strong></p>
+                <label for="food-option">Choose an option from the list</label>
+                <input list="food-options" id="food-option" name="food-option">
+                <datalist id="food-options">
+                    <option value="Taco track">
+                    <option value="KFC">
+                    <option value="shake shack">
+                    <option value="Korean cold noodle">
+                    <option value="Chinese style BBQ">
+                    <option value="Sushi">
+                </datalist>
+                <br>
+                <button>
+                    Submit! &#10004;
+                </button>
+                <br>
+                <p><strong>Desserts</strong></p>
+                <label for="desserts-option">Choose an option from the list</label>
+                <input list="desserts-options" id="desserts-option" name="desserts-option">
+                <datalist id="desserts-options">
+                    <option value="Boba milk tea">
+                    <option value="Icecream">
+                    <option value="Croquette">
+                    <option value="Starbucks"></option>
+                </datalist>
+                <br>
+                <button>
+                    Submit! &#10004;
+                </button>
+                <br>
+                <br>
+                <img class="picture" src="food-winnie-the-pooh.gif" alt="ready to eat">
+
+
+            </section>
+            <hr>
+            <section>
+                <h2 id="5">Concerns</h2>
+                <label for="textbox">Let us know if you any concerns<br></label>
+                <textarea name="textbox" rows="5" cols="33" placeholder="Comment text..."></textarea>
+            </section>
+            <hr>
+            <section>
+                <h2 id="6">Sign up for next meeting</h2>
+                <p>Even though this event is mainly for the incoming student, we also want to invite our <em>dear members</em> like you to join the event.
+                    If you have time and like to participate, please sign up below! <span>We hope to see you all there！</span></p>
+                <form>
+                    <fieldset>
+                    <br>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                    <br>
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email">
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit!">
+                    </fieldset>
+                </form>
+            </section>
+            <hr>
+
+        <footer>
+            <p>Contact Information</p>
+            <ul>
+                <li><a href="mailto:someone@ucsd.edu">Email</a></li>
+                <li><a href="tel:+123456789">Phone</a></li>
+            </ul>
+        </footer>
+        </main>
+
+    </body>
+    </html>
