@@ -1,1 +1,177 @@
+/*Backgroun color*/
+* {
+    background-color:mistyrose;
+}
+/*Title*/
+#title {
+    font-family: 'Ephesis', cursive;
+    border-style: dotted;
+    border-color: coral;
+    border-width: thick;
+    border-radius: 50px 20px;
+
+    position: static;
+    margin: auto;
+    width: auto;
+    height: auto;
+    color: #8B0000;
+    text-align: center;
+    font-size: 50Q;
+}
+/*Date and location*/
+#Date-loc {
+    color:rgb(205,92,92);
+    text-align: center;
+}
+[class|=D-L] {
+    background-color: lightgrey;
+}
+/*Description*/
+h5,#des1{
+    color:rgb(205,92,92);
+    text-align: center;
+}
+
+/*image*/
+.picture {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+#img2 {
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+/*Music*/
+#music {
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width:40em;
+}
+/*Section Title*/
+h2{
+    font-family: 'Ephesis', cursive;
+    color:hsl(0,100%,25%);
+    text-align: left;
+    font-size: 30pt;
+    text-decoration: underline;
+    border: 10px dashed coral;
+    border-width: thin;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Video*/
+video{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width:70vmax;
+    border: 1vmin solid plum;
+    padding: 10px 20px 10px 20px;
+
+}
+  
+/*Signing up*/
+#box {
+    position: sticky;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+/*FOOD*/
+#FOOD{
+    color:#8B0000;
+    text-align: center;
+}
+
+/*Paragraph or Text*/
+
+#food-options {
+    text-align: center;
+}
+summary {
+    color:#CD6839;
+    margin: 25px 25px 20px 20px;
+}
+
+/*Pseudo-class*/
+button:hover {
+    color:rosybrown;
+}
+button:active {
+    color:darkred;
+}
+
+/*Flexbox*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+section{
+    flex-flow:column wrap;
+    justify-content: flex-start;
+    flex: 40px;
+}
+
+/*Grid*/
+#concerns{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-auto-columns: auto;
+    grid-gap: 5px;
+}
+/*Descendant Combinator*/
+div p{
+    background-color: lightgoldenrodyellow;
+}
+
+/*Child Combinator*/
+section > p {
+    width: auto;
+    height: auto;
+    color:#CD6839;
+}
+
+/*Adjacent sibling combinator*/
+div + p {
+    font-family: 'Ephesis', cursive;
+    color:orange;
+    text-align:center;
+    font-size: 200%;
+  }
+
+/*General sibling combinator*/
+main ~ p {
+    font-family: 'Ephesis', cursive;
+    color:black;
+    text-align:center;
+    font-size: 200%;
+}
+
+/*Combining Two Selectors*/
+ul.menu{
+    border-style: dotted;
+    border-color: coral;
+    border-width:thick;
+    border-radius: 10px;
+}
 
