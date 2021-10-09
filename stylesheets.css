@@ -1,5 +1,5 @@
-/*body color*/
-body {
+/*Backgroun color*/
+* {
     background-color:mistyrose;
 }
 /*Title*/
@@ -23,20 +23,23 @@ body {
     color:rgb(205,92,92);
     text-align: center;
 }
+[class|=D-L] {
+    background-color: lightgrey;
+}
 /*Description*/
-h5{
+h5,#des1{
     color:rgb(205,92,92);
     text-align: center;
 }
 
 /*image*/
-#img1 {
+.picture {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 60vmin;
+    width: 400px;
 }
 #img2 {
     display: inline;
@@ -47,10 +50,6 @@ h5{
     width: 400px;
 }
 /*Music*/
-#des1{
-    color:rgb(205,92,92);
-    text-align: center;
-}
 #music {
     display:block;
     margin-top: auto;
@@ -82,12 +81,10 @@ video{
     margin-left: auto;
     margin-right: auto;
     width:70vmax;
-    border: 10px solid plum;
+    border: 1vmin solid plum;
     padding: 10px 20px 10px 20px;
 
 }
-
-/*Concerns*/
   
 /*Signing up*/
 #box {
@@ -98,7 +95,6 @@ video{
     margin-right: auto;
     max-width: fit-content;
     max-height: fit-content;
-
 }
 
 /*FOOD*/
@@ -108,11 +104,7 @@ video{
 }
 
 /*Paragraph or Text*/
-p {
-    width: auto;
-    height: auto;
-    color:#CD6839;
-}
+
 #food-options {
     text-align: center;
 }
@@ -147,3 +139,39 @@ section{
     grid-auto-columns: auto;
     grid-gap: 5px;
 }
+/*Descendant Combinator*/
+div p{
+    background-color: lightgoldenrodyellow;
+}
+
+/*Child Combinator*/
+section > p {
+    width: auto;
+    height: auto;
+    color:#CD6839;
+}
+
+/*Adjacent sibling combinator*/
+div + p {
+    font-family: 'Ephesis', cursive;
+    color:orange;
+    text-align:center;
+    font-size: 200%;
+  }
+
+/*General sibling combinator*/
+main ~ p {
+    font-family: 'Ephesis', cursive;
+    color:black;
+    text-align:center;
+    font-size: 200%;
+}
+
+/*Combining Two Selectors*/
+ul.menu{
+    border-style: dotted;
+    border-color: coral;
+    border-width:thick;
+    border-radius: 10px;
+}
+
