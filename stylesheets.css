@@ -139,39 +139,3 @@ section{
     grid-auto-columns: auto;
     grid-gap: 5px;
 }
-/*Descendant Combinator*/
-div p{
-    background-color: lightgoldenrodyellow;
-}
-
-/*Child Combinator*/
-section > p {
-    width: auto;
-    height: auto;
-    color:#CD6839;
-}
-
-/*Adjacent sibling combinator*/
-div + p {
-    font-family: 'Ephesis', cursive;
-    color:orange;
-    text-align:center;
-    font-size: 200%;
-  }
-
-/*General sibling combinator*/
-main ~ p {
-    font-family: 'Ephesis', cursive;
-    color:black;
-    text-align:center;
-    font-size: 200%;
-}
-
-/*Combining Two Selectors*/
-ul.menu{
-    border-style: dotted;
-    border-color: coral;
-    border-width:thick;
-    border-radius: 10px;
-}
-
