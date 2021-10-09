@@ -6,20 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UCSD welcome dinner</title>
         <link rel="icon" href="icon.ico" type="image/gif">
+        <link rel="stylesheet" href="stylesheets.css" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+        <style>
+            @media screen and (min-width: 480px) {
+            #title {width: 600px; float: center;}
+            #main {margin-left: 216px;}
+        }
+        </style>
     </head>
     <body>
         <header>
-            <h1>UCSD welcome dinner</h1>
-            <h3>
+            <h1 id="title" style="text-shadow: 2px 2px">UCSD Welcome Winner</h1>
+            <h3 id="Date-loc">
                 Date: Oct. 8, 2021<br>
                 Location: Sixth College meeting room
             </h3>
             <h5>The purpose of this meeting is to plan a <em>welcome dinner party</em> for the incoming UCSD student.</h5>
             <br>
-            <img class="picture" src="depositphotos_77323640-stock-illustration-people-at-dinner-party.jpg" alt="ready to eat" width="400" height="250" />>
+            <img id="img1" class="picture" src="depositphotos_77323640-stock-illustration-people-at-dinner-party.jpg" alt="ready to eat" width="400" height="250" />
             <figure>
-                <figcaption>Waiting before the meeting start</figcaption>
-                <audio
+                <figcaption> <p id="des1">Waiting before the meeting start...</p></figcaption>
+                <audio id="music"
                     controls
                     src="Faylinn.mp3">
                         Your browser does not support the
@@ -38,7 +49,7 @@
                     <li><a href="#3">What we left from last time</a></li>
                     <li><a href="#4">What we need to discuss today</a></li>
                     <li><a href="#5">Concerns</a></li>
-                    <li><a href="#6">Sign up for next meeting</a></li>
+                    <li><a href="#signup">Sign up for next meeting</a></li>
                 </ul>
             </nav>
             <hr>
@@ -67,7 +78,7 @@
                 </details>
                 <br>
                 <p><i>Please select your name and then press the button below when you arrived to the meeting</i></p>
-                <label for="Attendance">Choose your name: </label>
+                <label for="Attendance"><p>Choose your name: </p></label>
                 <select id="Attendance">
                     <option>person A</option>
                     <option>person B</option>
@@ -125,7 +136,7 @@
             <hr>
             <section>
                 <h2 id="2">View the event Location</h2>
-                <video controls width="250">
+                <video controls>
                 
                     <source src="video-park.mp4"
                             type="video/mp4">
@@ -136,7 +147,7 @@
             <hr>
             <section>
                 <h2 id="3">What we left from last time</h2>
-                <label>Summary</label>
+                <label><p>Summary</p></label>
                 <p>At the last meeting, we finished our <b>flyer design</b> and also <b>reserved the locaton</b> for the event.
                     Then, we discussed about how we were going to <b>send out Invitations</b>. 
                     We concluded that we will be sending out <b>flyers</b> and <b>emails</b> with <b>invitations links</b> and <b>QR codes</b> for all incoming students.</p>
@@ -146,9 +157,10 @@
                 <h2 id="4">What we need to discuss today</h2>
                 <p>This meeting is mainly for the food decision and food ordering. 
                     Once we decided what to eat for our welcome dinner we should be <strong>GOOD TO GO!</strong></p>
-                <h3>Food Option</h3>
+                <h3 id="FOOD">Food Option</h3>
                 <p><strong>Main Dishes</strong></p>
-                <label for="food-option">Choose an option from the list</label>
+                <label for="food-option"><p>Choose an option from the list</p></label>
+                <br>
                 <input list="food-options" id="food-option" name="food-option">
                 <datalist id="food-options">
                     <option value="Taco track">
@@ -164,7 +176,8 @@
                 </button>
                 <br>
                 <p><strong>Desserts</strong></p>
-                <label for="desserts-option">Choose an option from the list</label>
+                <label for="desserts-option"><p>Choose an option from the list</p></label>
+                <br>
                 <input list="desserts-options" id="desserts-option" name="desserts-option">
                 <datalist id="desserts-options">
                     <option value="Boba milk tea">
@@ -178,22 +191,22 @@
                 </button>
                 <br>
                 <br>
-                <img class="picture" src="food-winnie-the-pooh.gif" alt="ready to eat">
+                <img id="img2" class="picture" src="food-winnie-the-pooh.gif" alt="ready to eat">
 
 
             </section>
             <hr>
-            <section>
+            <section id="concerns">
                 <h2 id="5">Concerns</h2>
-                <label>Let us know if you any concerns<br></label>
+                <label><p>Let us know if you any concerns</p></label>
                 <textarea name="textbox" rows="5" cols="33" placeholder="Comment text..."></textarea>
             </section>
             <hr>
             <section>
-                <h2 id="6">Sign up for next meeting</h2>
+                <h2 id="signup">Sign up for next meeting</h2>
                 <p>Even though this event is mainly for the incoming student, we also want to invite our <em>dear members</em> like you to join the event.
                     If you have time and like to participate, please sign up below! <span>We hope to see you all there！</span></p>
-                <form>
+                <form id="box">
                     <fieldset>
                     <br>
                     <label for="name">Name: </label>
